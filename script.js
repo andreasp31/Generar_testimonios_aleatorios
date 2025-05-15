@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-    const $testimonios = $(".cuerpo_testimonio");
-
     function generar(){
         generar.empty();
         $.getJSON("https://randomuser.me/api/?results=4", function (data) {
@@ -17,8 +15,8 @@ $(document).ready(function(){
                     <p class="nombres_t">${usuario.name.first}</p>
                 </div>`
                 
-                $testimonios.append(testimonio);
-            
+                $(".cuerpo_testimonio").append(testimonio);
+                
             })
 
         }).fail(function (error) {
@@ -27,8 +25,7 @@ $(document).ready(function(){
         })
     }
 
-    generar();
-
     $(".cuerpo_testimonio").on(click,generar);
+    generar();
 
 })
