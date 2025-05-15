@@ -1,7 +1,13 @@
 $(document).ready(function(){
 
+    $(".cuerpo_testimonio").click(nuevostestimonios());
+
+    function nuevostestimonios(){
+        $(".cuerpo_testimonio").empty();
+        generar();
+    }
+
     function generar(){
-        generar.empty();
         $.getJSON("https://randomuser.me/api/?results=4", function (data) {
     
             $.each(data.results, function (index, usuario) {
@@ -24,8 +30,7 @@ $(document).ready(function(){
         console.log("Error de carga de testimonios");
         })
     }
-
-    $(".cuerpo_testimonio").on(click,generar);
+    
     generar();
 
 })
