@@ -1,5 +1,31 @@
 $(document).ready(function(){
 
+
+    const nueva_ventana = `
+        <div class="nueva_ventana" style="display: none;">
+            <div class="contenido_ventana">
+                <h3>Solicita tu cita</h3>
+                <p>Déjanos tus datos y nos pondremos en contacto contigo:</p>
+                <form>
+                    <input type="text" placeholder="Nombre completo" class="hueco"><br>
+                    <input type="email" placeholder="Correo electrónico" class="hueco"><br>
+                    <textarea placeholder="Motivo de la consulta" class="hueco"></textarea><br>
+                    <button type="submit" class="boton2">Enviar</button>
+                </form>
+                <div class="cerrar_ventana" class="boton2">X</div>
+            </div>
+        </div>
+    `
+    $("body").append(nueva_ventana);
+
+    $("#pedir_cita").click(function() {
+        $(".nueva_ventana").fadeIn();
+    });
+
+    $(document).on("click", ".cerrar_ventana", function() {
+        $(".nueva_ventana").fadeOut();
+    });
+
     function nuevostestimonios(){
         $(".cuerpo_testimonio").empty();
         generar();

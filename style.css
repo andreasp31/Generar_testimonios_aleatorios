@@ -384,6 +384,7 @@ h3{
     width: 70em;
     padding-top: 2em;
 }
+
 details{
     display: block;
     position: relative;
@@ -393,6 +394,10 @@ details{
     padding: 0.8em;
     margin: 0.2em;
     cursor: pointer;
+}
+
+button {
+    all: unset;
 }
 
 summary{
@@ -486,6 +491,49 @@ details[open] .h4::before{
     cursor: pointer;
     margin-top: 2em;
 }
+
+/*Busqué para que se fijara arriba para que no apareciese al fondo del todo*/
+.nueva_ventana{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    gap:5em;
+    z-index: 999;
+    padding: 2.5em;
+    top:6em; 
+    align-self: center;
+    left: 50%; 
+    flex-direction: column;
+    background-color:#F6F4F2;
+    width: 20em;
+    height: 30em;
+    justify-self: center;
+}
+
+.cerrar_ventana{
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.hueco{
+    gap:3em;
+    border: none;
+    padding: 1em;
+    margin: 1em;
+}
+
+textarea{
+    resize: none;
+    width: 20em;
+    height: 8em;
+}
+
+.contenido_ventana{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
 
 @media(width < 768px){
 
