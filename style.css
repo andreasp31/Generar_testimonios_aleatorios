@@ -296,15 +296,15 @@ h3{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap:5em;
-    width: 60em;
+    gap:4em;
+    width: 70em;
     text-align: center;
 }
 
 .foto1{
-    height: 15em;
-    width: 15em;
-    border-radius: 8em;
+    height: 14em;
+    width: 14em;
+    border-radius: 7em;
 }
 
 .foto2{
@@ -484,6 +484,7 @@ details[open] .h4::before{
 #generar_aleatorio{
     width: 14em;
     cursor: pointer;
+    margin-top: 2em;
 }
 
 @media(width < 768px){
