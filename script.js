@@ -14,7 +14,7 @@ $(document).ready(function(){
                 const testimonio = `
                 <div class="testimonio">
                     <div class="foto1">
-                        <img src="${usuario.picture.medium}>
+                        <img src="${usuario.picture.large}">
                     </div>
                     <div class="comilla">“</div>
                     <p class="textos_t">Responden rápidamente y te aconsejan la mejor solución, cuando se te presenta cualquier tipo de duda por pequeña que esta sea.</p>
