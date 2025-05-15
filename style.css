@@ -478,7 +478,11 @@ details[open] .h4::before{
         background-repeat: no-repeat;
         height: 12em;
         width: 12em;
-    }
+}
+
+#generar_aleatorio{
+    width: 14em;
+}
 
 @media(width < 768px){
 
@@ -636,6 +640,3 @@ details[open] .h4::before{
 
 }
 
-#generar_aleatorio{
-        width: 14em;
-    }
