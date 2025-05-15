@@ -302,8 +302,9 @@ h3{
 }
 
 .foto1{
-    height: 12em;
-    width: 12em;
+    height: 15em;
+    width: 15em;
+    border-radius: 8em;
 }
 
 .foto2{
@@ -482,6 +483,7 @@ details[open] .h4::before{
 
 #generar_aleatorio{
     width: 14em;
+    cursor: pointer;
 }
 
 @media(width < 768px){
